@@ -1,7 +1,7 @@
 const Joi = require('joi');
 const mongoose = require('mongoose');
 
-const Customer = mongoose.model('Customer', mongoose.Schema({ // simply putting schema def as model arg, rather than defining it it's own variable as done in genre.js
+const customerSchema = new mongoose.Schema({ 
     name: {
         type: String,
         require: true,
@@ -18,7 +18,9 @@ const Customer = mongoose.model('Customer', mongoose.Schema({ // simply putting 
         minlength: 3,
         maxlength:25
     }
-}));
+});
+
+const Customer = mongoose.model('Customer', customerSchema);
 
 function validateCustomer(customer) {
     const schema = {
@@ -32,3 +34,4 @@ function validateCustomer(customer) {
 
 exports.Customer = Customer;
 exports.validate = validateCustomer;
+exports.customerSchema = customerSchema;

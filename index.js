@@ -3,6 +3,8 @@ const genreRouter = require('./routes/genres');
 const customerRouter = require('./routes/customers');
 const movieRouter = require('./routes/movies');
 const rentalRouter = require('./routes/rentals');
+const Joi = require('joi');
+Joi.objectId = require('joi-objectid')(Joi);
 
 const mongoose = require('mongoose');
 
@@ -18,6 +20,7 @@ app.use('/api/customers', customerRouter);
 app.use('/api/movies', movieRouter);
 app.use('/api/rentals', rentalRouter);
 
+// eslint-disable-next-line no-undef
 const port = process.env.port || 5000;
 
 app.listen(port, () => console.log(`Listening on port ${port}...`));

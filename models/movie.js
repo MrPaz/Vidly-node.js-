@@ -31,7 +31,7 @@ const Movie = mongoose.model('Movie', new mongoose.Schema({
 function validateMovie(movie) {
     const schema = {
         title: Joi.string().min(3).max(255).required(),
-        genreId: Joi.string().required(),  // note genreId here. this is what client sends to api. this can be independent of persistence model defined above
+        genreId: Joi.objectId().required(),  // note genreId here. this is what client sends to api. this can be independent of persistence model defined above
         numberInStock: Joi.number().min(0).max(50).required(),
         dailyRentalRate: Joi.number().min(0).max(15).required()
     };

@@ -1,5 +1,5 @@
-const Joi = require('joi');
 const mongoose = require('mongoose');
+const Joi = require('joi');
 
 const Rental = mongoose.model('Rental', new mongoose.Schema({
     movie: {
@@ -57,8 +57,8 @@ const Rental = mongoose.model('Rental', new mongoose.Schema({
 
 function validateRental(rental) {
     const schema = {
-        movieId: Joi.string().required(), // only send movie & customer Id's, this should be handled by client, every other part of schema should be set by server
-        customerId: Joi.string().required()
+        movieId: Joi.objectId().required(), // only send movie & customer Id's, this should be handled by client, every other part of schema should be set by server
+        customerId: Joi.objectId().required()
     };
 
     return Joi.validate(rental, schema);

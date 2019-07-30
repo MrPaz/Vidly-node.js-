@@ -3,6 +3,8 @@ const genreRouter = require('./routes/genres');
 const customerRouter = require('./routes/customers');
 const movieRouter = require('./routes/movies');
 const rentalRouter = require('./routes/rentals');
+const userRouter = require('./routes/users');
+const authRouter = require('./routes/auth');
 const Joi = require('joi');
 Joi.objectId = require('joi-objectid')(Joi);
 
@@ -19,6 +21,8 @@ app.use('/api/genres', genreRouter);
 app.use('/api/customers', customerRouter);
 app.use('/api/movies', movieRouter);
 app.use('/api/rentals', rentalRouter);
+app.use('/api/users', userRouter);
+app.use('/api/auth', authRouter);
 
 // eslint-disable-next-line no-undef
 const port = process.env.port || 5000;

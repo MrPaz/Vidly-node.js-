@@ -7,6 +7,12 @@ const userRouter = require('./routes/users');
 const authRouter = require('./routes/auth');
 const Joi = require('joi');
 Joi.objectId = require('joi-objectid')(Joi);
+const config = require('config');
+
+if (!config.get('jwtPrivateKey')) {
+    console.error('Fatal Error: jwtPrivateKey is not defined.');
+    process.exit(1);
+}
 
 const mongoose = require('mongoose');
 
@@ -24,7 +30,6 @@ app.use('/api/rentals', rentalRouter);
 app.use('/api/users', userRouter);
 app.use('/api/auth', authRouter);
 
-// eslint-disable-next-line no-undef
 const port = process.env.port || 5000;
 
 app.listen(port, () => console.log(`Listening on port ${port}...`));

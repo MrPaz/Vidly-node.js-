@@ -8,6 +8,7 @@ const authRouter = require('./routes/auth');
 const Joi = require('joi');
 Joi.objectId = require('joi-objectid')(Joi);
 const config = require('config');
+const error = require('./middleware/error');
 
 if (!config.get('jwtPrivateKey')) {
     console.error('Fatal Error: jwtPrivateKey is not defined.');
@@ -29,6 +30,8 @@ app.use('/api/movies', movieRouter);
 app.use('/api/rentals', rentalRouter);
 app.use('/api/users', userRouter);
 app.use('/api/auth', authRouter);
+
+app.use(error);
 
 const port = process.env.port || 5000;
 

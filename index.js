@@ -1,78 +1,19 @@
-require('express-async-errors');
 const express = require('express');
-const genreRouter = require('./routes/genres');
-const customerRouter = require('./routes/customers');
-const movieRouter = require('./routes/movies');
-const rentalRouter = require('./routes/rentals');
-const userRouter = require('./routes/users');
-const authRouter = require('./routes/auth');
-const Joi = require('joi');
-Joi.objectId = require('joi-objectid')(Joi);
-const config = require('config');
-const error = require('./middleware/error');
-const winston = require('winston');
-require('winston-mongodb');
-
-// process.on('uncaughtException', (ex) => {
-//     console.log('We got an Uncaught Exception.');
-//     winston.error(ex.message, ex);
-//     process.exit(1);
-// });
-
-// process.on('unhandledRejection', (ex) => {
-//     console.log('We got an Unhandled Promise Rejection.');
-//     winston.error(ex.message, ex);
-//     process.exit(1);
-// });
-
-winston.exceptions.handle(new winston.transports.File({ filename: 'uncaughtExceptions.log' }));
-
-process.on('unhandledRejection', (ex) => {
-    throw ex;
-});
-
-winston.add(new winston.transports.Console());
-winston.add(new winston.transports.File({ filename: 'logfile.log' }));
-winston.add(new winston.transports.MongoDB({ db: 'mongodb://localhost/vidly', level: 'info' }));
-// winston.createLogger({
-//     transports: [
-//         new winston.transports.Console(),
-//         new winston.transports.File({ filename: 'logfile.log'}),
-//         new winston.transports.MongoDB({db: 'mongodb://localhost/vidly'})
-//     ]
-// })
-
-// throw new Error('Something failed during startup. '); // test startup error handling
-// let p = Promise.reject(new Error('Something failed. Promise rejected. ')); // test unhandled promise errors
-// p.then(() => console.log('Done.')); // no .catch(...) statement
-
-if (!config.get('jwtPrivateKey')) {
-    console.error('Fatal Error: jwtPrivateKey is not defined.');
-    process.exit(1);
-}
-
-const mongoose = require('mongoose');
-
-mongoose.connect('mongodb://localhost/vidly')
-    .then(() => console.log('Connected to MongoDb...'))
-    .catch(err => console.log('Could not connect to MongoDB...', err));
-
 const app = express();
+const winston = require('winston');
 
-app.use(express.json());
-app.use('/api/genres', genreRouter);
-app.use('/api/customers', customerRouter);
-app.use('/api/movies', movieRouter);
-app.use('/api/rentals', rentalRouter);
-app.use('/api/users', userRouter);
-app.use('/api/auth', authRouter);
-
-app.use(error);
+require('./startup/logging')();
+require('./startup/routes')(app);
+require('./startup/db')(); // returns a function so must call it.
+require('./startup/config')();
+require('./startup/validation')();
 
 const port = process.env.port || 5000;
 
-app.listen(port, () => console.log(`Listening on port ${port}...`));
+app.listen(port, () => winston.info(`Listening on port ${port}...`));
 
+
+//////////////////////////////////////////////////////////////////////////
 // // Async example
 // console.log('Before');
 // getUser(1, (user) => {

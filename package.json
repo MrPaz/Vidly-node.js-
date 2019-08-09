@@ -20,10 +20,11 @@
   "devDependencies": {
     "eslint": "^6.1.0",
     "eslint-plugin-react": "^7.14.3",
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "supertest": "^4.0.2"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest --watchAll --verbose"
   },
   "repository": {
     "type": "git",

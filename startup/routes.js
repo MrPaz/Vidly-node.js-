@@ -4,6 +4,7 @@ const movieRouter = require('../routes/movies');
 const rentalRouter = require('../routes/rentals');
 const userRouter = require('../routes/users');
 const authRouter = require('../routes/auth');
+const returnsRouter = require('../routes/returns');
 const error = require('../middleware/error');
 const express = require('express');
 
@@ -17,5 +18,6 @@ module.exports = function(app) {
     app.use('/api/rentals', rentalRouter);
     app.use('/api/users', userRouter);
     app.use('/api/auth', authRouter);    
+    app.use('/api/returns', returnsRouter);    
     app.use(error);    
 }

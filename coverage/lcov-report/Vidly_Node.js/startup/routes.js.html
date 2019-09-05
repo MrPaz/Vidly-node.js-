@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">94.74% </span>
+        <span class="strong">36.84% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>18/19</span>
+        <span class='fraction'>7/19</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -30,21 +30,21 @@
         <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>1/1</span>
+        <span class='fraction'>0/1</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">94.74% </span>
+        <span class="strong">36.84% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>18/19</span>
+        <span class='fraction'>7/19</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line high'></div>
+  <div class='status-line low'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -75,20 +75,20 @@
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const genreRouter = require('../routes/genres');
 const customerRouter = require('../routes/customers');
@@ -97,20 +97,20 @@ const rentalRouter = require('../routes/rentals');
 const userRouter = require('../routes/users');
 const authRouter = require('../routes/auth');
 const returnsRouter = require('../routes/returns');
-const error = require('../middleware/error');
-const express = require('express');
+const error = <span class="cstat-no" title="statement not covered" >require('../middleware/error');</span>
+const express = <span class="cstat-no" title="statement not covered" >require('express');</span>
 &nbsp;
 &nbsp;
 &nbsp;
-module.exports = function(app) {
-    app.use(express.json());
-    app.use('/api/genres', genreRouter);
-    app.use('/api/customers', customerRouter);
-    app.use('/api/movies', movieRouter);
-    app.use('/api/rentals', rentalRouter);
-    app.use('/api/users', userRouter);
-    app.use('/api/auth', authRouter);    
-    app.use('/api/returns', returnsRouter);    
+<span class="cstat-no" title="statement not covered" >module.exports = <span class="fstat-no" title="function not covered" >fu</span>nction(app) {</span>
+<span class="cstat-no" title="statement not covered" >    app.use(express.json());</span>
+<span class="cstat-no" title="statement not covered" >    app.use('/api/genres', genreRouter);</span>
+<span class="cstat-no" title="statement not covered" >    app.use('/api/customers', customerRouter);</span>
+<span class="cstat-no" title="statement not covered" >    app.use('/api/movies', movieRouter);</span>
+<span class="cstat-no" title="statement not covered" >    app.use('/api/rentals', rentalRouter);</span>
+<span class="cstat-no" title="statement not covered" >    app.use('/api/users', userRouter);</span>
+<span class="cstat-no" title="statement not covered" >    app.use('/api/auth', authRouter);    </span>
+<span class="cstat-no" title="statement not covered" >    app.use('/api/returns', returnsRouter);    </span>
 <span class="cstat-no" title="statement not covered" >    app.use(error);    </span>
 }</pre></td></tr>
 </table></pre>
@@ -118,7 +118,7 @@ module.exports = function(app) {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Aug 27 2019 15:45:12 GMT-0500 (Central Daylight Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Sep 05 2019 10:22:24 GMT-0500 (Central Daylight Time)
 </div>
 </div>
 <script src="..\..\prettify.js"></script>

@@ -44,7 +44,7 @@ describe('/api/returns', async () => {
     });
 
     it('should return 401 if client is not logged in', async () => {
-        token = null;
+        token = '';
 
         const res = await exec();
 
@@ -67,20 +67,36 @@ describe('/api/returns', async () => {
         expect(res.status).toBe(400);
     });
 
-    it('shold return 404 if no rental for this movie', async () => {
-        rental.movie._id = '';
+    it('shold return 404 if no rental for movie/customer', async () => {
+        await   Rental.remove({});
 
         const res = await exec();
 
-        expect(res.status.toBe(404));
+        expect(res.status).toBe(404);
     });
 
-    it('shold return 404 if no rental for this customer', async () => {
-        rental.customer._id = '';
+    it('should return 400 if rental already has return date', async () => {
+        rental.dateReturned = new Date();
+        await rental.save();
 
         const res = await exec();
 
-        expect(res.status.toBe(404));
+        expect(res.status).toBe(400);
+    });
+
+    it('should return 200 if it receives valid request', async () => {
+        const res = await exec();
+
+        expect(res.status).toBe(200);
+    });
+
+    it('should set the return date', async () => {
+        await exec();
+
+        const rentalInDb = await Rental.findById(rental._id);
+        const diff = new Date() - rentalInDb.dateReturned;
+
+        expect(diff).toBeLessThan(10 * 1000);
     });
 
 })

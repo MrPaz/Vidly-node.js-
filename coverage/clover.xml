@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1567801046738" clover="3.2.0">
-  <project timestamp="1567801046738" name="All files">
-    <metrics statements="296" coveredstatements="194" conditionals="72" coveredconditionals="18" methods="41" coveredmethods="15" elements="409" coveredelements="227" complexity="0" loc="296" ncloc="296" packages="5" files="22" classes="22"/>
+<coverage generated="1568063803039" clover="3.2.0">
+  <project timestamp="1568063803040" name="All files">
+    <metrics statements="301" coveredstatements="199" conditionals="72" coveredconditionals="18" methods="41" coveredmethods="15" elements="414" coveredelements="232" complexity="0" loc="301" ncloc="301" packages="5" files="22" classes="22"/>
     <package name="Vidly_Node.js">
       <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="index.js" path="C:\Users\mattp\Documents\Dev\Vidly_Node.js\index.js">
@@ -31,12 +31,12 @@
         <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
-        <line num="5" count="16" type="stmt"/>
-        <line num="6" count="16" type="cond" truecount="2" falsecount="0"/>
-        <line num="8" count="13" type="stmt"/>
-        <line num="9" count="13" type="stmt"/>
-        <line num="10" count="12" type="stmt"/>
-        <line num="11" count="12" type="stmt"/>
+        <line num="5" count="19" type="stmt"/>
+        <line num="6" count="19" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="16" type="stmt"/>
+        <line num="9" count="16" type="stmt"/>
+        <line num="10" count="15" type="stmt"/>
+        <line num="11" count="15" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
         <line num="18" count="4" type="stmt"/>
       </file>
@@ -112,8 +112,8 @@
         <line num="4" count="5" type="stmt"/>
         <line num="6" count="5" type="stmt"/>
         <line num="29" count="5" type="stmt"/>
-        <line num="30" count="20" type="stmt"/>
-        <line num="31" count="20" type="stmt"/>
+        <line num="30" count="23" type="stmt"/>
+        <line num="31" count="23" type="stmt"/>
         <line num="34" count="5" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
@@ -122,7 +122,7 @@
       </file>
     </package>
     <package name="Vidly_Node.js.routes">
-      <metrics statements="175" coveredstatements="88" conditionals="62" coveredconditionals="11" methods="23" coveredmethods="4"/>
+      <metrics statements="180" coveredstatements="93" conditionals="62" coveredconditionals="11" methods="23" coveredmethods="4"/>
       <file name="auth.js" path="C:\Users\mattp\Documents\Dev\Vidly_Node.js\routes\auth.js">
         <metrics statements="17" coveredstatements="7" conditionals="6" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="1" count="3" type="stmt"/>
@@ -277,23 +277,28 @@
         <line num="65" count="3" type="stmt"/>
       </file>
       <file name="returns.js" path="C:\Users\mattp\Documents\Dev\Vidly_Node.js\routes\returns.js">
-        <metrics statements="16" coveredstatements="16" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
+        <metrics statements="21" coveredstatements="21" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
-        <line num="7" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="10" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="13" count="4" type="stmt"/>
-        <line num="19" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="21" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="23" count="2" type="stmt"/>
-        <line num="24" count="2" type="stmt"/>
-        <line num="26" count="2" type="stmt"/>
-        <line num="30" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="7" type="stmt"/>
+        <line num="21" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="5" type="stmt"/>
+        <line num="26" count="5" type="stmt"/>
+        <line num="27" count="5" type="stmt"/>
+        <line num="28" count="5" type="stmt"/>
+        <line num="30" count="5" type="stmt"/>
+        <line num="34" count="5" type="stmt"/>
+        <line num="38" count="3" type="stmt"/>
       </file>
       <file name="users.js" path="C:\Users\mattp\Documents\Dev\Vidly_Node.js\routes\users.js">
         <metrics statements="21" coveredstatements="9" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>

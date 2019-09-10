@@ -589,3 +589,67 @@
 {"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
 {"message":"Listening on port 5000...","level":"info"}
 {"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"level":"error","message":"rental.return is not a functionrental.return is not a function","stack":"TypeError: rental.return is not a function\n    at Object.<anonymous>.router.post (C:\\Users\\mattp\\Documents\\Dev\\Vidly_Node.js\\routes\\returns.js:17:5)"}
+{"level":"error","message":"rental.return is not a functionrental.return is not a function","stack":"TypeError: rental.return is not a function\n    at Object.<anonymous>.router.post (C:\\Users\\mattp\\Documents\\Dev\\Vidly_Node.js\\routes\\returns.js:17:5)"}
+{"level":"error","message":"rental.return is not a functionrental.return is not a function","stack":"TypeError: rental.return is not a function\n    at Object.<anonymous>.router.post (C:\\Users\\mattp\\Documents\\Dev\\Vidly_Node.js\\routes\\returns.js:17:5)"}
+{"level":"error","message":"rental.return is not a functionrental.return is not a function","stack":"TypeError: rental.return is not a function\n    at Object.<anonymous>.router.post (C:\\Users\\mattp\\Documents\\Dev\\Vidly_Node.js\\routes\\returns.js:17:5)"}
+{"level":"error","message":"rental.return is not a functionrental.return is not a function","stack":"TypeError: rental.return is not a function\n    at Object.<anonymous>.router.post (C:\\Users\\mattp\\Documents\\Dev\\Vidly_Node.js\\routes\\returns.js:17:5)"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"level":"error","message":"rental.return is not a functionrental.return is not a function","stack":"TypeError: rental.return is not a function\n    at Object.<anonymous>.router.post (C:\\Users\\mattp\\Documents\\Dev\\Vidly_Node.js\\routes\\returns.js:17:5)"}
+{"level":"error","message":"rental.return is not a functionrental.return is not a function","stack":"TypeError: rental.return is not a function\n    at Object.<anonymous>.router.post (C:\\Users\\mattp\\Documents\\Dev\\Vidly_Node.js\\routes\\returns.js:17:5)"}
+{"level":"error","message":"rental.return is not a functionrental.return is not a function","stack":"TypeError: rental.return is not a function\n    at Object.<anonymous>.router.post (C:\\Users\\mattp\\Documents\\Dev\\Vidly_Node.js\\routes\\returns.js:17:5)"}
+{"level":"error","message":"rental.return is not a functionrental.return is not a function","stack":"TypeError: rental.return is not a function\n    at Object.<anonymous>.router.post (C:\\Users\\mattp\\Documents\\Dev\\Vidly_Node.js\\routes\\returns.js:17:5)"}
+{"level":"error","message":"rental.return is not a functionrental.return is not a function","stack":"TypeError: rental.return is not a function\n    at Object.<anonymous>.router.post (C:\\Users\\mattp\\Documents\\Dev\\Vidly_Node.js\\routes\\returns.js:17:5)"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}
+{"message":"Listening on port 5000...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_tests...","level":"info"}

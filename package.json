@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "bcrypt": "^3.0.6",
-    "config": "^3.2.2",
+    "config": "^3.3.8",
     "eslint-utils": "^1.4.2",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
